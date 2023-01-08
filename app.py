@@ -6,11 +6,17 @@ from datetime import datetime
 
 final_model = pickle.load(open('model.pkl', 'rb'))
 
-
-st.title("Human Survival Status Prediction After Heart Attack")
-st.markdown(
+html_temp= """
+    <div style="background-color:tomato;padding:10px">
+    <h2 style="color:white;text-align:centre;">Human Survival Status Prediction After Heart Attack </h2>
+    </div>
     """
-    Heart is one of the most important organs in Human’s body. In life, some changes may happen that may bring various diseases like, blood pressure, sugar, etc. Similarly, heart failure is also a dreadful disease.Heart Failure prediction is a complex task in the medical field. This app will help in medical field to understand the effect of some major factor on survival of patient. 
+st.markdown(html_temp,unsafe_allow_html=True)
+
+st.markdown(
+   
+    """
+    Heart is one of the most important organs in Human’s body. In life, some changes may happen that may bring various diseases like, blood pressure, sugar etc. Similarly, heart failure is also a dreadful disease.Heart Failure prediction is a complex task in the medical field. This app will help in medical field to understand the effect of some major factor on survival of patient. 
 """
 )
 #['time','ejection_fraction','serum_creatinine','high_blood_pressure','serum_sodium']
@@ -20,23 +26,29 @@ ejection_fraction=float(st.number_input("Ejection Fraction (percentage)"))
 serum_creatinine=float(st.number_input("Serum Creatinine (mg/dL)"))
 high_blood_pressure=float(st.number_input("High Blood Pressure (yes=1 or No=0)"))
 serum_sodium=float(st.number_input("Serum Sodium (mEq/L)"))
-    
-btn=st.button("predict")
-if btn:
-    if ejection_fraction == 0 or serum_creatinine==0 or high_blood_pressure==0 or serum_sodium==0:
-        st.text("Processing, please wait .....")
-        st.text("WARNING⚠️")
-        st.text("Please Enter Data to predict")
-    else:
-        
-        pred=(final_model.predict(np.array([[time,ejection_fraction,serum_creatinine,high_blood_pressure,serum_sodium]])))
-        x=pred[0]
-        if x==0:
-            st.subheader("The Patient Survived ")
-        elif x==1:
-            st.subheader("The Patient Not Survived")
+Warning="By selecting the check box you are agree to use our app.\nDon't worry. We will not save your any data."
+check=st.checkbox("I agree",help=Warning)
+if(check):
+    st.write('Great!')
+    btn=st.button("predict")
+    if btn:
+        if ejection_fraction == 0 or serum_creatinine==0 or high_blood_pressure==0 or serum_sodium==0:
+            st.text("WARNING⚠️")
+            st.text("Please Enter Data to predict")
         else:
-            st.text("model can't predict the status")
+
+            pred=(final_model.predict(np.array([[time,ejection_fraction,serum_creatinine,high_blood_pressure,serum_sodium]])))
+            x=pred[0]
+            if x==0:
+                result="The Patient Survived "
+            elif x==1:
+                result="The Patient Not Survived"
+            else:
+                result="model can't predict the status"
+            st.success('Output :  {}'.format(result))
+        st.text("Thanks for using")
+if st.button("About"):
+        st.text("Created by Surendra Kumar")
 ## footer
 from htbuilder import HtmlElement, div, ul, li, br, hr, a, p, img, styles, classes, fonts
 from htbuilder.units import percent, px
@@ -52,7 +64,6 @@ def link(link, text, **style):
 
 
 def layout(*args):
-
     style = """
     <style>
       # MainMenu {visibility: hidden;}
