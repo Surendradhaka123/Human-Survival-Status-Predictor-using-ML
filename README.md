@@ -1,6 +1,6 @@
 # Human Survival Status Prediction after Heart Attack using ML
 
-![Heart Attack]([https://example.com/path/to/heart-attack-image.png](https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FMyocardial_infarction&psig=AOvVaw26xebCvHNUKH6kePOm_A8i&ust=1690182286575000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCJD4_fmhpIADFQAAAAAdAAAAABAE))
+![Heart Attack]([[https://example.com/path/to/heart-attack-image.png](https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FMyocardial_infarction&psig=AOvVaw26xebCvHNUKH6kePOm_A8i&ust=1690182286575000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCJD4_fmhpIADFQAAAAAdAAAAABAE)](https://www.istockphoto.com/photo/heart-attack-concept-gm1128931450-298046977))
 
 ## Table of Contents
 
@@ -23,7 +23,7 @@ The dataset used for training and evaluation can be found at [link to dataset]([
 - `anaemia`: Decrease of red blood cells or hemoglobin (boolean)
 - `Creatinine_phosphokinase`: Level of the CPK enzyme in the blood (mcg/L)
 - `diabetes`: If the patient has diabetes (boolean)
--`ejection_fraction`: Percentage of blood leaving the heart at each contraction (percentage)
+- `ejection_fraction`: Percentage of blood leaving the heart at each contraction (percentage)
 - `high_blood_pressure`: If the patient has hypertension (boolean)
 - `platelets`: Platelets in the blood (kiloplatelets/mL)
 - `serum_creatinine`: Level of serum creatinine in the blood (mg/dL)
