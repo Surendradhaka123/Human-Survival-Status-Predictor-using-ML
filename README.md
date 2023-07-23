@@ -18,7 +18,7 @@ This README provides an overview of the project, instructions for setting up the
 
 ## Dataset
 
-The dataset used for training and evaluation can be found at [link to dataset]([https://example.com/path/to/dataset](https://www.kaggle.com/datasets/andrewmvd/heart-failure-clinical-data)https://www.kaggle.com/datasets/andrewmvd/heart-failure-clinical-data)
+The dataset used for training and evaluation can be found at [([https://example.com/path/to/dataset](https://www.kaggle.com/datasets/andrewmvd/heart-failure-clinical-data)https://www.kaggle.com/datasets/andrewmvd/heart-failure-clinical-data)]
 - It contains the following columns:
 
 - `anaemia`: Decrease of red blood cells or hemoglobin (boolean)
