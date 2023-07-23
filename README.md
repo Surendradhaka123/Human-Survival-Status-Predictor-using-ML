@@ -9,6 +9,7 @@
 - [Installation](#installation)
 - [Usage](#usage)
 - [Model Training](#model-training)
+- [Web App](#web-app)
 
 ## Introduction
 
@@ -79,6 +80,12 @@ predictions = model.predict(data)
 ```
 
 5. `predictions` will now contain the predicted survival status for each entry in your dataset.
+
+   ## Web App
+
+   I have developed a web app for this model, where you can directly enter the required value and get the prediction. I have made this app using Streamlit and deployed it on Streamlit Cloud.
+
+   You can check out this app by folllowing the link. [web app](https://surendradhaka123-ml-projects-app-k56xaz.streamlit.app/)
 
 ---
 
