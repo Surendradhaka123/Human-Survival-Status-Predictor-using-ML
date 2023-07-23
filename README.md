@@ -1,7 +1,5 @@
 # Human Survival Status Prediction after Heart Attack using ML
 
-[Heart Attack]([[https://example.com/path/to/heart-attack-image.png](https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FMyocardial_infarction&psig=AOvVaw26xebCvHNUKH6kePOm_A8i&ust=1690182286575000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCJD4_fmhpIADFQAAAAAdAAAAABAE)](https://www.istockphoto.com/photo/heart-attack-concept-gm1128931450-298046977))
-
 ## Table of Contents
 
 - [Introduction](#introduction)
