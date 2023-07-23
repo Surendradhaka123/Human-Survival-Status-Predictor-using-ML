@@ -37,7 +37,7 @@ The dataset used for training and evaluation can be found at [([https://www.kagg
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/Human-Survival-Status-Prediction.git
+git clone https://github.com/Surendradhaka123/Human-Survival-Status-Predictor-using-ML.git
 cd Human-Survival-Status-Prediction
 ```
 
